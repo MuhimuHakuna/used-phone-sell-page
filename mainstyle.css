@@ -1,5 +1,171 @@
-.mobile{
+body{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border: none;
+    clip:calc(100%-5px)
+    
+}
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
     background-color: white;
-    height: min-content;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: 80px;
+    padding: 15px 35px 10px 35px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
 
+#logo {
+    max-width: 60px;
+    width: auto;
+    margin: 5px;
+    z-index: 2;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    font-family: "Telegraf", sans-serif;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #ededed 2px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+  }
+
+.icons-menu-div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+div {
+    margin: -10px;
+    padding: 20px 10px;
+}
+
+#image1{
+    background-image: linear-gradient(0deg, #95b4de, transparent, transparent, transparent);
+}
+#mobile-photo{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto -20px auto;
+}
+
+#small-phone-photo{
+width: auto;
+height: 80px;
+
+}
+
+#slider-galerry {
+    margin: 15px -10px 15px -10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+#section3{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Telegraf", sans-serif;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h1 {
+    color:#3366ff;
+}
+
+p {
+    line-height: 2.0;
+}
+
+#button-first {
+    margin: 10px auto 10px auto;
+    display: flex;
+    background-color: #0e5dcf;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    width: 80%;
+    font-size: 16px;
+    font-weight: bold;
+    max-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 15px auto 15px 10px;
+    display: flex;
+    background-color: #0e5dcf;
+    color: inherit;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    width: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    max-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.black{
+    background-color: white;
+    color:#0e5dcf
 }
