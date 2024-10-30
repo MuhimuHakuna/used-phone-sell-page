@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoko Lab</title>
     <link rel="stylesheet" href="mainstyle.css">
+    <script src="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+        "></script>
+    <link href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
 </head>
 
 <body>
-    <script>/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-        function openNav() {
-            document.getElementById("top-sidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
 
-        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-        function closeNav() {
-            document.getElementById("top-sidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            document.body.style.backgroundColor = "white";
-        }</script>
 
-    <header>
+    <!-- <header>
         <img id="logo" src="/images/hokolab-logo.svg">
         <div class="icons-menu-div">
             <img src="/images/shopping_basket.svg"></img>
-            <span onclick="openNav()"><img clas="hamburger-icon" src="/images/hamburger_menu.svg"></span>
+            <img clas="hamburger-icon" src="/images/hamburger_menu.svg">
             <!--<div id="top-sidebar" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img clas="hamburger-icon" src="/images/close_x.svg"></a>
             <a href="/home/haven/Documents/PROJECTS/learning-how-to-build-websites/hokolab/index.html">Kup</a>
@@ -37,17 +31,59 @@
             <a href="/home/haven/Documents/PROJECTS/learning-how-to-build-websites/hokolab/index.html">HokoBack</a></div>   -->
         </div>
     </header>
-    <div id="section1">
-        <div id="image1">
-            <img id=mobile-photo src="/images/iphone1.png">
-        </div>
-        <h1>Profesjonalnie odnowiony iPhone</h1>
-        <h4>Tańszy niż nowy | Lepszy niż używany</h4>
-        <button id="button-first"><img id="image-in-button1" src="images/btn-1.svg"> Kup <img id="image-in-button2"
-                src="images/btn-2.svg"></button>
-    </div>
 
-    <div class="slider-galery" data-flickity-options='{ "wrapAround": true }'>
+    <section id="s_01">
+
+        <div id="s_01_div_img">
+            <img id="s_01_img" src="/images/iphone1_full.svg">
+        </div>
+
+        <div>
+            <h1 style="color:#3366ff; margin: 0px;">
+                Profesjonalnie<br>odnowiony iPhone
+            </h1>
+            <h2>
+                Tańszy niż nowy | Lepszy niż używany
+            </h2>
+            <div id="s_01_text" style="margin-bottom: 10px;">
+                <div style="display: flex; align-items: center;">
+                    <img src="images/ICONS/inventory.svg" style="width: 36px;"></img>
+                    <p style="padding-left: 20px;">
+                        Błyskawiczna wysyłka
+                    </p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img src="images/ICONS/phone.svg" style="width: 36px;"></img>
+                    <p style="padding-left: 20px;">
+                        Możliwość zwrotu przez 30 dni
+                    </p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img src="images/ICONS/medal.svg" style="width: 36px;"></img>
+                    <p style="padding-left: 20px;">
+                        Gwarancja minimum 12 miesięcy
+                    </p>
+                </div>
+            </div>
+            <button>
+                Kup
+            </button>
+        </div>
+
+    </section>
+
+    <div class="splide splide2" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">Slide 01</li>
+                <li class="splide__slide">Slide 02</li>
+                <li class="splide__slide">Slide 03</li>
+            </ul>
+        </div>
+    </div> 
+
+<!--
+    <div class="slider-galery">
         <div class="slider-element">
             <img id=small-phone-photo src="/images/single_phone.png">
             <p>Iphone 14 PRO</p>
@@ -86,71 +122,100 @@
             przejrzystej klasyfikacji wizualnej możesz mieć pewność, że Twój zakup będzie trafiony.</p>
         <button class="black">Zobacz więcej <img src="images/chevron_right.svg"></img></button>
     </div>
-    <div><div><img id="chevrons" src="/images/chevron_left_black.svg">
-        <img id="chevrons" src="/images/chevron_right_black.svg"></div>
+
     <div class="slider-galery" id="reviews-galery">
         <div class="slider-element" id="first-review">
-            <div id="f-grades">
+            <div id="f-grades-stars">
                 <img id=grade src="/images/grade.svg">
                 <img id=grade src="/images/grade.svg">
                 <img id=grade src="/images/grade.svg">
                 <img id=grade src="/images/grade.svg">
                 <img id=grade src="/images/grade.svg">
             </div>
+
             <p style="font-size: x-large;">5,00</p>
             <p id="text-review">Bardzo Dobra</p>
             <img id="e-review" src="/images/e-review.svg">
         </div>
+
         <div class="slider-element" id="reviews">
-            <div id="grades-verificed">
-                <div id="grades">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                </div> <img id="verificed"
-                    src="/images/verified.svg">
-            </div>
-            <p id="text-review">25.12.2024</p>
-            <p>Błyskawiczna realizacja</p>
-            <p id="text-review">Błyskawiczna realizacja, doskonały kontakt z Obsługą Klienta. Polecam firmę Hoko Lab.
+            <div id="grades-stars">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+            </div> <img id="verificed-icon" src="/images/verified.svg">
+            <p id="text-date">25.12.2024</p>
+            <p id="review-title">Błyskawiczna realizacja</p>
+            <p id="review-text">Błyskawiczna realizacja, doskonały kontakt z Obsługą Klienta. Polecam firmę Hoko
+                Lab.
             </p>
+            <p id="review-link">Zobacz więcej...</p>
         </div>
+
         <div class="slider-element" id="reviews">
-            <div id="grades-verificed">
-                <div id="grades">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                </div> <img id="verificed"
-                    src="/images/verified.svg">
-            </div>
-            <p id="text-review">25.12.2024</p>
-            <p>Błyskawiczna realizacja</p>
-            <p id="text-review">Błyskawiczna realizacja, doskonały kontakt z Obsługą Klienta. Polecam firmę Hoko Lab.
+            <div id="grades-stars">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+            </div> <img id="verificed-icon" src="/images/verified.svg">
+            <p id="text-date">25.12.2024</p>
+            <p id="review-title">Błyskawiczna realizacja</p>
+            <p id="review-text">Błyskawiczna realizacja, doskonały kontakt z Obsługą Klienta. Polecam firmę Hoko
+                Lab.
             </p>
+            <p id="review-link">Zobacz więcej...</p>
         </div>
+
         <div class="slider-element" id="reviews">
-            <div id="grades-verificed">
-                <div id="grades">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                    <img id=grade src="/images/grade.svg">
-                </div> <img id="verificed"
-                    src="/images/verified.svg">
-            </div>
-            <p id="text-review">25.12.2024</p>
-            <p>Błyskawiczna realizacja</p>
-            <p id="text-review">Błyskawiczna realizacja, doskonały kontakt z Obsługą Klienta. Polecam firmę Hoko Lab.
+            <div id="grades-stars">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+                <img id=grade src="/images/grade.svg">
+            </div> <img id="verificed-icon" src="/images/verified.svg">
+            <p id="text-date">25.12.2024</p>
+            <p id="review-title">Błyskawiczna realizacja</p>
+            <p id="review-text">Błyskawiczna realizacja, doskonały kontakt z Obsługą Klienta. Polecam firmę Hoko
+                Lab.
             </p>
+            <p id="review-link">Zobacz więcej...</p>
         </div>
-    </div></div>
     </div>
+    </div>
+    <div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var splide = new Splide('.splide');
+                splide.mount();
+                var splide = new Splide('.splide2');
+                splide.mount();
+            });
+        </script>
+        <section class="splide" aria-label="Basic Structure Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01</li>
+                    <li class="splide__slide">Slide 02</li>
+                    <li class="splide__slide">Slide 03</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="splide splide2" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">Slide 01</li>
+                <li class="splide__slide">Slide 02</li>
+                <li class="splide__slide">Slide 03</li>
+            </ul>
+        </div>
+    </div> -->
 </body>
 
 </html>
