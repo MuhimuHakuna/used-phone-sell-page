@@ -3,11 +3,25 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoko Lab</title>
+    <title>
+        Hoko Lab
+    </title>
     <link rel="stylesheet" href="mainstyle.css">
+
     <script src="
         https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-        "></script>
+        ">
+        </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elms = document.getElementsByClassName('splide');
+            for (var i = 0; i < elms.length; i++) {
+                new Splide(elms[i]).mount();
+            }
+        });
+    </script>
+
     <link href="
         https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         " rel="stylesheet">
@@ -29,17 +43,21 @@
             <a href="/home/haven/Documents/PROJECTS/learning-how-to-build-websites/hokolab/index.html">Blog</a>
             <a href="/home/haven/Documents/PROJECTS/learning-how-to-build-websites/hokolab/index.html">Centrum Pomocy</a>
             <a href="/home/haven/Documents/PROJECTS/learning-how-to-build-websites/hokolab/index.html">HokoBack</a></div>   -->
-        </div>
+    </div>
     </header>
 
     <section id="s_01">
 
         <div id="s_01_div_img">
-            <img id="s_01_img" src="/images/iphone1_full.svg">
+            <picture id="s_01_div_img">
+                <source srcset="images/s1-mobile.webp" media="(max-width: 770px)">
+                <source srcset="images/s1-desktop.webp">
+                <img src="images/s1-desktop.webp" style="width: 100%;">
+            </picture>
         </div>
 
-        <div>
-            <h1 style="color:#3366ff; margin: 0px;">
+        <div id="s_01_div_text">
+            <h1 style="color:#3366ff;">
                 Profesjonalnie<br>odnowiony iPhone
             </h1>
             <h2>
@@ -72,44 +90,131 @@
 
     </section>
 
-    <div class="splide splide2" role="group" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">Slide 01</li>
-                <li class="splide__slide">Slide 02</li>
-                <li class="splide__slide">Slide 03</li>
-            </ul>
-        </div>
-    </div> 
+    <section style="max-width: 1000px; margin: auto;">
+        <div>
 
-<!--
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var splide = new Splide('.splide', {
+                        perPage: 7,
+                        gap: '2rem',
+                        arrows: boolean = false,
+                        pagination: boolean = false,
+                        breakpoints: {
+                            640: {
+                                perPage: 4,
+                                gap: '.7rem',
+                                height: '6rem',
+                            },
+                            480: {
+                                perPage: 3,
+                                gap: '.7rem',
+                                height: '6rem',
+                            },
+                        },
+                    });
+                    splide.mount();
+                });
+            </script>
+            <section class="splide" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <span class="splide__slide" url="www.fb.com">
+                            <a href="www.fb.com">
+                                <img id="splide_slide_iphone" src="/images/single_phone.png">
+                                <p>
+                                    Iphone 14 PRO
+                                </p>
+                            </a>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                        <span class="splide__slide" url="www.fb.com">
+                            <img id="splide_slide_iphone" src="/images/single_phone.png">
+                            <p>
+                                Iphone 14 PRO
+                            </p>
+                        </span>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!--
     <div class="slider-galery">
         <div class="slider-element">
-            <img id=small-phone-photo src="/images/single_phone.png">
+            <img id="splide_slide_iphone" src="/images/single_phone.png">
             <p>Iphone 14 PRO</p>
         </div>
         <div class="slider-element">
-            <img id=small-phone-photo src="/images/single_phone.png">
+            <img id="splide_slide_iphone" src="/images/single_phone.png">
             <p>Iphone 12 MAX</p>
         </div>
         <div class="slider-element">
-            <img id=small-phone-photo src="/images/single_phone.png">
+            <img id="splide_slide_iphone" src="/images/single_phone.png">
             <p>Iphone XE</p>
         </div>
         <div class="slider-element">
-            <img id=small-phone-photo src="/images/single_phone.png">
+            <img id="splide_slide_iphone" src="/images/single_phone.png">
             <p>Iphone XS</p>
         </div>
         <div class="slider-element">
-            <img id=small-phone-photo src="/images/single_phone.png">
+            <img id="splide_slide_iphone" src="/images/single_phone.png">
             <p>Iphone 14</p>
         </div>
         <div class="slider-element">
-            <img id=small-phone-photo src="/images/single_phone.png">
+            <img id="splide_slide_iphone" src="/images/single_phone.png">
             <p>Iphone XXS</p>
         </div>
         <div class="slider-element">
-            <img id=small-phone-photo src="/images/single_phone.png">
+            <img id="splide_slide_iphone" src="/images/single_phone.png">
             <p>Iphone 12</p>
         </div>
     </div>
@@ -200,9 +305,9 @@
         <section class="splide" aria-label="Basic Structure Example">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide">Slide 01</li>
-                    <li class="splide__slide">Slide 02</li>
-                    <li class="splide__slide">Slide 03</li>
+                    <span class="splide__slide" url="www.fb.com">Slide 01</span>
+                    <span class="splide__slide" url="www.fb.com">Slide 02</span>
+                    <span class="splide__slide" url="www.fb.com">Slide 03</span>
                 </ul>
             </div>
         </section>
@@ -210,9 +315,9 @@
     <div class="splide splide2" role="group" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
             <ul class="splide__list">
-                <li class="splide__slide">Slide 01</li>
-                <li class="splide__slide">Slide 02</li>
-                <li class="splide__slide">Slide 03</li>
+                <span class="splide__slide" url="www.fb.com">Slide 01</span>
+                <span class="splide__slide" url="www.fb.com">Slide 02</span>
+                <span class="splide__slide" url="www.fb.com">Slide 03</span>
             </ul>
         </div>
     </div> -->
