@@ -20,7 +20,7 @@ body {
 
 /** section 1 **/
 
-#s_01, {
+#s_01 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ h2 {
 }
 
 @media (max-width: 770px) {
-    #s_01, {
+    #s_01 {
         flex-direction: column;
         text-align: center;
     }
@@ -180,16 +180,27 @@ a:hover #splide_slide_iphone {
 #s_03 {
     background-color: black;
     border-radius: 45px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
+
+#s_03 #s_01_div_text{
+    padding-bottom: 65px;
+}
+
+#s_03 #s_01_div_img {
+    height: 100%;
 }
 
 @media (max-width: 770px) {
-#s_03 {
-    flex-direction: column-reverse;
-    border-radius: 0;
+    #s_03 {
+        flex-direction: column-reverse;
+        border-radius: 0;
         text-align: center;
-}
+    }
+
+    container{
+        background-color: black;
+    };
 }
