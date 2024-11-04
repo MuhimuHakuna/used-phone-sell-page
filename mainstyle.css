@@ -75,13 +75,13 @@ h2 {
         min-width: 85%;
     }
 
-    #s_01_div_img {
+    #s_01 #s_01_div_img {
         width: 100%;
         max-width: 100%;
         margin-right: 0;
     }
 
-    #s_01_img {
+    #s_01 #s_01_img {
         width: 100%;
     }
 
@@ -183,6 +183,8 @@ a:hover #splide_slide_iphone {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-height: fit-content;
+    width: 85%;
 }
 
 #s_03 #s_01_div_text{
@@ -198,6 +200,12 @@ a:hover #splide_slide_iphone {
         flex-direction: column-reverse;
         border-radius: 0;
         text-align: center;
+        width: 100%;
+    }
+
+    #s_03 #s_01_img, #s_03 #s_01_div_img {
+        align-self: end;
+        width: auto;
     }
 
     container{
