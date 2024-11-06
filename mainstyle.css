@@ -40,6 +40,9 @@ body {
 
 h1 {
     font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 50px;
 }
 
 h2 {
@@ -54,6 +57,7 @@ h2 {
 
     h1 {
         font-size: 36px;
+        
     }
 
     h2 {
@@ -87,6 +91,8 @@ h2 {
 
     h1 {
         font-size: 30px;
+        letter-spacing: -.6px;
+        line-height: 30px;
     }
 
     h2 {
@@ -105,6 +111,7 @@ button {
     font-size: large;
     font-weight: 600;
     transition: 500ms;
+    
 }
 
 button:hover {
@@ -116,6 +123,7 @@ button:hover {
 @media (max-width: 1280px) {
     button {
         min-width: 200px;
+        font-size: 17px;
     }
 }
 
@@ -177,6 +185,15 @@ a:hover #splide_slide_iphone {
 
 /** seciton 3 **/
 
+container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    max-width: 1394px;
+    padding: 0 33px;
+    margin: 0 auto;
+}
+
 #s_03 {
     background-color: black;
     border-radius: 45px;
@@ -184,10 +201,10 @@ a:hover #splide_slide_iphone {
     align-items: center;
     justify-content: space-between;
     max-height: fit-content;
-    width: 85%;
+    width: 100%;
 }
 
-#s_03 #s_01_div_text{
+#s_03 #s_01_div_text {
     padding-bottom: 65px;
 }
 
@@ -195,20 +212,36 @@ a:hover #splide_slide_iphone {
     height: 100%;
 }
 
+#s_03 p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 431px;
+}
+
 @media (max-width: 770px) {
     #s_03 {
         flex-direction: column-reverse;
         border-radius: 0;
-        text-align: center;
-        width: 100%;
+        text-align: left;
+        padding-left: 0;
     }
 
-    #s_03 #s_01_img, #s_03 #s_01_div_img {
+    #s_03 p {
+        max-width: 680px;
+    }
+
+    #s_03 #s_01_img,
+    #s_03 #s_01_div_img {
         align-self: end;
         width: auto;
+        height: 100%;
+        margin-left: auto;
+        max-width:none;
     }
 
-    container{
+    container {
         background-color: black;
-    };
+        padding: 0;
+    }
 }
