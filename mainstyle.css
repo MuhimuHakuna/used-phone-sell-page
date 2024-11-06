@@ -219,6 +219,10 @@ container {
     max-width: 431px;
 }
 
+#s_03 button{
+    box-shadow: none;
+}
+
 @media (max-width: 770px) {
     #s_03 {
         flex-direction: column-reverse;

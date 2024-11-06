@@ -90,23 +90,19 @@
 
     </section>
 
-    <section style="max-width: 1000px; margin: auto; padding-top: 50px; font-weight: 700;">
+    <section style="max-width: 1000px; margin: auto; padding-top: 50px; font-weight: 700; width: 100%;">
         <div>
 
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     var splide = new Splide('.splide', {
-                        perPage: 7,
+                        perPage: 8,
                         gap: '2rem',
                         arrows: boolean = false,
                         pagination: boolean = false,
+
                         breakpoints: {
-                            640: {
-                                perPage: 4,
-                                gap: '.7rem',
-                                height: '6rem',
-                            },
-                            480: {
+                            770: {
                                 perPage: 3,
                                 gap: '.7rem',
                                 height: '6rem',
@@ -114,7 +110,6 @@
                         },
                     });
                     splide.mount();
-
                     window.addEventListener('resize', function () {
                         splide.refresh();
                     });
@@ -223,14 +218,15 @@
     <container media="min-width(760px)">
 
         <section id="s_03">
-            
+
 
             <div id="s_01_div_text" style="margin-left: 5%;">
                 <h1>
                     Gwarantowana<br>jakość HokoLab®
                 </h1>
                 <p>
-                    Nasze odnowione iPhone’y dadzą Ci doświadczenie nowego produktu w korzystnej cenie. Dzięki jasnym zasadom i przejrzystej klasyfikacji wizualnej możesz mieć pewność, że Twój zakup będzie trafiony.
+                    Nasze odnowione iPhone’y dadzą Ci doświadczenie nowego produktu w korzystnej cenie. Dzięki jasnym
+                    zasadom i przejrzystej klasyfikacji wizualnej możesz mieć pewność, że Twój zakup będzie trafiony.
                 </p>
                 <button style="background-color: white; background-image: none; color:#3366ff; min-width: auto; padding-right: 20px;
         padding-left: 20px;">
@@ -249,46 +245,79 @@
         </section>
     </container>
 
+    <section style="display: flex; justify-content: space-evenly;; align-items: center;">
+
+        <div
+            style="display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border: .05em solid hsl(0deg 0% 0% / 10.2%);
+            border-radius: 20px;
+            text-align: center;
+            padding: 14.4px;
+            gap: .5em;
+            cursor: pointer;">
+            <div>
+                <img id=grade src="/images/ICONS/grade.svg" style="width: 1em; height: 1em;">
+                <img id=grade src="/images/ICONS/grade.svg" style="width: 1em; height: 1em;">
+                <img id=grade src="/images/ICONS/grade.svg" style="width: 1em; height: 1em;">
+                <img id=grade src="/images/ICONS/grade.svg" style="width: 1em; height: 1em;">
+                <img id=grade src="/images/ICONS/grade.svg" style="width: 1em; height: 1em;">
+            </div>
+            <p style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; margin: 0;">
+                5,00
+            </p>
+            <p style="font-family: Helvetica, Arial, sans-serif; margin: 0;">
+                Bardzo Dobra
+            </p>
+            <img id="e-review" src="/images/e-review.svg" style="width: 1.7em; height: 1.7em;">
+        </div>
+
+        <div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var splide = new Splide('.splide', {
+                        perPage: 8,
+                        gap: '2rem',
+                        arrows: boolean = false,
+                        pagination: boolean = false,
+
+                        breakpoints: {
+                            770: {
+                                perPage: 3,
+                                gap: '.7rem',
+                                height: '6rem',
+                            },
+                        },
+                    });
+                    splide.mount();
+                    window.addEventListener('resize', function () {
+                        splide.refresh();
+                    });
+                });
+            </script>
+            <section class="splide" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list" style="padding-bottom: 30px !important;">
+
+                        <span class="splide__slide" url="www.fb.com">
+                            <a href="www.fb.com">
+                                <img id="splide_slide_iphone" src="/images/single_phone.png">
+                                <p style="text-wrap: wrap; font-size: 14px; font-weight: 600; line-height: 1.2;">
+                                    IPhone 14 Pro Max
+                                </p>
+                            </a>
+                        </span>
+
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+
     <!--
-    <div class="slider-galery">
-        <div class="slider-element">
-            <img id="splide_slide_iphone" src="/images/single_phone.png">
-            <p>Iphone 14 PRO</p>
-        </div>
-        <div class="slider-element">
-            <img id="splide_slide_iphone" src="/images/single_phone.png">
-            <p>Iphone 12 MAX</p>
-        </div>
-        <div class="slider-element">
-            <img id="splide_slide_iphone" src="/images/single_phone.png">
-            <p>Iphone XE</p>
-        </div>
-        <div class="slider-element">
-            <img id="splide_slide_iphone" src="/images/single_phone.png">
-            <p>Iphone XS</p>
-        </div>
-        <div class="slider-element">
-            <img id="splide_slide_iphone" src="/images/single_phone.png">
-            <p>Iphone 14</p>
-        </div>
-        <div class="slider-element">
-            <img id="splide_slide_iphone" src="/images/single_phone.png">
-            <p>Iphone XXS</p>
-        </div>
-        <div class="slider-element">
-            <img id="splide_slide_iphone" src="/images/single_phone.png">
-            <p>Iphone 12</p>
-        </div>
-    </div>
-    <div id="section3">
-        <img id=mobile-photo src="/images/iphone1_full.png">
-        <br>
-        <br>
-        <h2>Gwarantowana jakość HokoLab®</h2>
-        <p>Nasze odnowione iPhone’y dadzą Ci doświadczenie nowego produktu w korzystnej cenie. Dzięki jasnym zasadom i
-            przejrzystej klasyfikacji wizualnej możesz mieć pewność, że Twój zakup będzie trafiony.</p>
-        <button class="black">Zobacz więcej <img src="images/chevron_right.svg"></img></button>
-    </div>
 
     <div class="slider-galery" id="reviews-galery">
         <div class="slider-element" id="first-review">
